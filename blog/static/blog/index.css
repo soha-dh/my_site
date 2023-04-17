@@ -73,3 +73,8 @@
     font-size: 1.5rem;
     color: #353535;
   }
+
+  .size_mount_image{
+    max-width: 100px;
+
+  }

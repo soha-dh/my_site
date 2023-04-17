@@ -7,6 +7,7 @@
 
 {% block css_files %}
     <link rel="stylesheet" href="{% static 'blog/index.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/post.css' %}">
 {% endblock %}
 
 
@@ -20,7 +21,7 @@
 
 <section id="welcome">
     <header>
-        <img src="" alt="Soha - the Author of this blog">
+        <img src="{%static "blog/images/soha.png"%}" alt="Soha - the Author of this blog">
         <h2>Soha's Blog</h2>
     </header>
 
@@ -34,7 +35,7 @@
         <li>
             <article class="post">
                 <a href="">
-                    <img src="" alt="Mounting">
+                    <img src="{% static "blog/images/mountains.jpg" %}" alt="Mounting" >
                     <div class="post__content">
                         <h3>Mountin Hiking</h3>
                         <p>Theres nothing Like the views your get when hiking in the mountings! 
@@ -54,5 +55,5 @@
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio sequi quasi nisi rerum nemo perspiciatis nihil tenetur doloremque dolorum amet!</p>
 </section>
 
-    <h1> Welcome to my blog </h1>
+    {% comment %} <h1> Welcome to my blog </h1> {% endcomment %}
 {% endblock %}
