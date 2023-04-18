@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+   this  Post title
+{% endblock %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'blog/post-details.css' %}">
+{% endblock %}
+
+
+{% block content %}
+    <section id="summary">
+        <h2>Post Title</h2>
+        <article>
+            <img src="{% static "blog/images/mountains.jpg" %}" alt="Post Title">
+            <address>By SohaStar</address>
+            <div>
+                last Updataed on <time> July 10th </time>
+            </div>
+        </article>
+    </section>
+
+
+    <main>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut corporis nostrum sequi 
+            accusantium facere reiciendis dignissimos temporibus, in architecto fugit eaque, 
+            molestias quisquam nisi consectetur deserunt ut ipsum perspiciatis hic.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut corporis nostrum sequi 
+            accusantium facere reiciendis dignissimos temporibus, in architecto fugit eaque, 
+            molestias quisquam nisi consectetur deserunt ut ipsum perspiciatis hic.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut corporis nostrum sequi 
+            accusantium facere reiciendis dignissimos temporibus, in architecto fugit eaque, 
+            molestias quisquam nisi consectetur deserunt ut ipsum perspiciatis hic.
+        </p>
+
+    </main>
+
+
+    {% endblock %}
