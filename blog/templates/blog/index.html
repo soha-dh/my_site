@@ -6,18 +6,12 @@
 {% endblock %}
 
 {% block css_files %}
+<link rel="stylesheet" href="{% static 'blog/post.css' %}">
     <link rel="stylesheet" href="{% static 'blog/index.css' %}">
-    <link rel="stylesheet" href="{% static 'blog/post.css' %}">
 {% endblock %}
 
 
 {% block content %}
-<header id="main-navigation">
-    <h1><a href="">Soha' Blog</a></h1>
-    <nav>
-        <a href="">All posts</a>
-    </nav>
-</header>
 
 <section id="welcome">
     <header>
@@ -32,20 +26,7 @@
 <section id="latest-posts">
     <h2>the latest Posts I have </h2>
     <ul>
-        <li>
-            <article class="post">
-                <a href="">
-                    <img src="{% static "blog/images/mountains.jpg" %}" alt="Mounting" >
-                    <div class="post__content">
-                        <h3>Mountin Hiking</h3>
-                        <p>Theres nothing Like the views your get when hiking in the mountings! 
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt, repellat non delectus
-                             quis iure sed blanditiis beatae ratione esse ad!
-                        </p>
-                    </div>
-                </a>
-            </article>
-        </li>
+       {% include "blog/includes/post.html"%}
     </ul>
 </section>
 
